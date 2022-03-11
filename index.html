@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
+  
   <title>Frontend Mentor | Manage landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -120,7 +121,7 @@
         </div>
       </div>
       <div class="link__circle__wrapper">
-        <div id="one" class="circle"></div>
+        <div id="one" class="circle active"></div>
         <div id="two" class="circle"></div>
         <div id="three" class="circle"></div>
         <div id="four" class="circle"></div>
@@ -142,7 +143,10 @@
     <!-- Footer  -->
     <div class="footer" role="contentinfo">
       <div class="input__wrapper">
-        <input type="email">
+        <div class="input__error">
+          <input type="email">
+          <span class="error">Your email has been verified</span>
+        </div>
         <a href="#!" class="btn">Go</a>
       </div>
 
@@ -261,6 +265,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="main.js"></script>
+ 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
 </html>

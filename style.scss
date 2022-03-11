@@ -333,6 +333,11 @@ body {
                cursor : pointer;
                transition : all .4s ease-in;
                margin : 0 5px;
+               
+               &.active {
+                   border : 2px solid hsla(12, 88%, 59%, 0);
+                   background : hsl(12, 88%, 59%);
+               }
            }
         }
 
@@ -404,19 +409,38 @@ body {
           
             display : flex;
             align-items : center;
+            justify-content : center;
 
-            input[type=email] {
-                border : none;
-                outline : none;
-                border-radius : 20px;
-                padding : .2rem 1rem;
-                transition : all .4s ease;
-                border : 2px solid transparent;
+            .input__error {
+                display  : flex;
+                flex-direction : column;
+                input[type=email] {
+                    border : none;
+                    outline : none;
+                    border-radius : 20px;
+                    padding : .2rem 1rem;
+                    transition : all .4s ease;
+                    border : 2px solid transparent;
+    
+                    &:focus {
+                        border: 1px solid rgb(233, 121, 87);
+                    }
+                }
+                .error {
+                    color : hsl(12, 78%, 64%);
+                    font-size : .8rem;
+                    margin-top : .4rem;
+                    text-align : center;
+                    opacity : 0;
+                    transition : opacity .5s ease-in;
 
-                &:focus {
-                    border: 1px solid rgb(233, 121, 87);
+                    &.active {
+                        opacity : 1;
+                    }
                 }
             }
+
+           
 
             .btn {
                 text-decoration : none;
@@ -426,6 +450,7 @@ body {
                 padding : .3rem 1.4rem;
                 border-radius : 20px;
                 transition : all .4s ease;
+                margin-bottom : 1.2rem;
 
                 &:hover {
                     background : hsl(12, 78%, 64%);

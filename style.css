@@ -444,6 +444,11 @@ body {
   margin: 0 5px;
 }
 
+.container .section__three .link__circle__wrapper .circle.active {
+  border: 2px solid rgba(242, 95, 58, 0);
+  background: #f25f3a;
+}
+
 .container .section__three .btn {
   margin-top: 1rem;
   text-decoration: none;
@@ -523,9 +528,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .footer .input__wrapper input[type=email] {
+.container .footer .input__wrapper .input__error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .footer .input__wrapper .input__error input[type=email] {
   border: none;
   outline: none;
   border-radius: 20px;
@@ -535,8 +553,22 @@ body {
   border: 2px solid transparent;
 }
 
-.container .footer .input__wrapper input[type=email]:focus {
+.container .footer .input__wrapper .input__error input[type=email]:focus {
   border: 1px solid #e97957;
+}
+
+.container .footer .input__wrapper .input__error .error {
+  color: #eb785c;
+  font-size: .8rem;
+  margin-top: .4rem;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+}
+
+.container .footer .input__wrapper .input__error .error.active {
+  opacity: 1;
 }
 
 .container .footer .input__wrapper .btn {
@@ -548,6 +580,7 @@ body {
   border-radius: 20px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  margin-bottom: 1.2rem;
 }
 
 .container .footer .input__wrapper .btn:hover {
