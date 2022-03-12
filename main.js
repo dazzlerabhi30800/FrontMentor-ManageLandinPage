@@ -56,7 +56,7 @@ oneCircle.addEventListener('click', () => {
     fourCircle.classList.remove('active');
     profileImage.src = "images/avatar-anisha.png";
     heading.innerText = "Anisha Li";
-    description.innerText = `“We have been able to cancel so many other subscriptions since using Manage.There is no more cross-channel confusion and everyone is much more focused.”`;
+    description.innerText = ` “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”`;
     tl.fromTo('.profile__img img', {opacity : 0}, {opacity : 1, duration : 0.5});
 tl.fromTo('.name', {opacity : 0}, {opacity : 1, duration : 0.5}, '<50%');
 tl.fromTo('.profile__description', {opacity : 0}, {opacity : 1, duration : 0.5}, '<50%');
